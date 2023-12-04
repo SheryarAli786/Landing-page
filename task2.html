@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="task2.css">
+    <script src="task2.js"></script>
+    <title>Document</title>
+</head>
+<body> <div class="initial-cont">
+        <header class="header1">
+            <div class="container1">
+                <div class="icon1-constructor1">
+                <div class="icon1">
+                    <button onclick="togglePageElementVisibility(you)" class="fa fa-bars" ></button>
+                </div>
+                <div class="constructor1">
+                    <a class="constructor">Constructor</a>
+                </div>
+            </div>
+                <div class="menu">
+                    <ul>
+                        <li class="a1">Dashboard</li>
+                        <li class="a2">About Us</li>
+                        <li class="a3">News</li>
+                        <li class="a4">User Policy</li>
+                        <li class="a5">Contacts</li>
+                       <li class="a6"><span class="fas fa-ellipsis-h "></span></li>
+                    </ul>
+                </div>
+                    <div class="searchbar">
+                             <a class="fa fa-search"></a>
+                            <a class="fa fa-chevron-right"></a>
+                        <input type="text" placeholder="Search Products, Order and Clients">
+                    </div>
+                    <div class="user-name">
+                    <div onclick="togglePageElementVisibility(what)" class="user-icon">
+                    <span class="fa fa-circle-user"></span></div>
+                    <div class="name">
+                        <span class="name1">Clayton Santos</span>
+                    </div></div>
+                    <div class="nav-two-icons">
+                    <!-- <div class="bell-icon"> -->
+                        <a class="red-dot"></a>
+                        <span class="fa fa-bell"></span>
+                    <!-- </div> -->
+                    <div class="xmark">
+                        <span class="fa fa-circle-xmark"></span>
+                    </div>
+                    </div>
+            </div>
+            <span class="nav-border"></span>
+        </header>
+        <section class="section1">
+            <div class="container-s1">
+                <div class="compass-icon">
+                    <span class="fa fa-compass"></span>
+                </div>
+                <div class="star-icon">
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="messenger-icon">
+                    <a class="orange-dot1"></a>
+                    <a class="fab fa-facebook-messenger"></a>
+                </div>
+            <div class="arrow-trend-up-icon">
+                <span class="fa fa-arrow-trend-up"></span>
+            </div>
+            <div class="globe-icon">
+                <span class="bi bi-globe-americas"></span>
+            </div>
+            <div class="buildings-icon">
+                <span class="fa fa-city"></span>
+            </div>
+            <div class="container-s1-a">
+                <div class="icon-img2">
+                    <img src="icon-img1.png">
+                    <span class="blue-dot1"></span>
+                </div>
+                <div class="icon-img1">
+                    <img src="icon-img2.jpg" alt="">
+                </div>
+                <div class="icon-img1">
+                    <img src="icon-img3.jpg" alt="">
+                </div>
+                <div class="icon-img1">
+                    <img src="icon-img4.jpg" alt="">
+                </div>
+                <div class="icon-img1">
+                    <span class="fa fa-circle-plus"></span>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="main-container">
+        <section class="section2">
+            <div class="container1-s2">
+                <div class="two-icons">
+                <div class="s2-icon1">
+                    <span class="fa fa-user" id="s2-icon1-user"></span>
+                </div>
+                    <div class="s2-icon2">
+                    <span onclick="togglePageElementVisibilitY(what)" class="fas fa-ellipsis-h " id="s2-icon2-ellips"></span>
+                </div></div>
+                <div class="s2img">
+                <div class="s2-img">
+                <div class="s2-img1">
+                  <img class="s2-img1-img" src="section2-img1.jpg" alt="">
+                </div>
+                <span class="s2-img-two">
+                    <a>2</a>
+                </span>
+            </div></div>
+            <div class="s2-headings">
+            <div class="s2-heading">
+                <a>Hello Alfred Bryant</a>
+            </div>
+            <div class="s2-email">
+                <a>adrain.nader@yahoo.com</a>
+            </div>
+            </div>
+            </div>
+            <div class="container2s2">
+                <div class="container2s2-row">
+                    <input type="radio" id="dashboard-radio" name="navigation" value="dashboard" style="display: none;">
+                    <label for="dashboard-radio" class="element1 e1">
+                        <img src="dashboard.svg" alt="">
+                        <a>Dashboard</a>
+                    </label>
+                    <input type="radio" id="notes-radio" name="navigation" value="notes" style="display: none;">
+                    <label for="notes-radio" class="element2 e2">
+                        <img src="notes.svg" alt="">
+                        <a>Notes</a>
+                    </label>
+                </div>
+                <div class="container2s2-row">
+                    <input type="radio" id="task-radio" name="navigation" value="task" style="display: none;">
+                    <label for="task-radio" class="element1">
+                        <img src="task.svg" alt="">
+                        <a>Tasks</a>
+                    </label>
+                    <input type="radio" id="files-radio" name="navigation" value="files" style="display: none;">
+                    <label for="files-radio" class="element2">
+                        <img src="files.svg" alt="">
+                        <a>Files</a>
+                    </label>
+                </div>
+                <div class="container2s2-row">
+                    <input type="radio" id="email-radio" name="navigation" value="email" style="display: none;">
+                    <label for="email-radio" class="element1">
+                        <img src="email.svg" alt="">
+                        <a>Emails</a>
+                    </label>
+                    <input type="radio" id="clients-radio" name="navigation" value="clients" style="display: none;">
+                    <label for="clients-radio" class="element2">
+                        <img src="clients.svg" alt="">
+                        <a>Clients</a>
+                    </label>
+                </div>
+                <div class="container2s2-row">
+                    <input type="radio" id="calender-radio" name="navigation" value="calender" style="display: none;">
+                    <label for="calender-radio" class="element1 e7">
+                        <img src="calender.svg" alt="">
+                        <a>Calendars</a>
+                    </label>
+                    <input type="radio" id="settings-radio" name="navigation" value="settings" style="display: none;">
+                    <label for="settings-radio" class="element2 e8">
+                        <img src="settiings.svg" alt="">
+                        <a>Settings</a>
+                    </label>
+                </div>
+            </div>
+            <div class="container3-s2">
+                <div class="social-icons">
+                    <img class="social-img1" src="call-icon.svg" alt="">
+                    <img class="social-img2" src="msg-icon.svg" alt="">
+                    <img class="social-img3" src="read-icon.svg" alt="">
+                    <img class="social-img4" src="share-icon.svg" alt="">
+                    <img class="social-img5" src="whatsapp-icon.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="hidden-section2" id="what">
+            <div class="container1-s2">
+                <div class="two-icons">
+                <div class="s2-icon1">
+                    <span class="fa fa-user" id="s2-icon1-user"></span>
+                </div>
+                    <div class="s2-icon2">
+                    <span onclick="togglePageElementVisibilitY(what)" class="fas fa-ellipsis-h " id="s2-icon2-ellips"></span>
+                </div></div>
+                <div class="s2img">
+                <div class="s2-img">
+                <div class="s2-img1">
+                  <img class="s2-img1-img" src="section2-img1.jpg" alt="">
+                </div>
+                <span class="s2-img-two">
+                    <a>2</a>
+                </span>
+            </div></div>
+            <div class="s2-headings">
+            <div class="s2-heading">
+                <a>Hello Alfred Bryant</a>
+            </div>
+            <div class="s2-email">
+                <a>adrain.nader@yahoo.com</a>
+            </div>
+            </div>
+            </div>
+            <div class="container2s2">
+                <div class="container2s2-row active-link">
+                    <div class="element1 e1 ">
+                        <img src="dashboard.svg" alt="">
+                        <a>Dashboard</a>
+                    </div>
+                    <div class="element2 e2 ">
+                        <img src="notes.svg" alt="">
+                        <a>Notes</a>
+                    </div>
+                </div>
+                <div class="container2s2-row active-link">
+                    <div class="element1 ">
+                        <img src="task.svg" alt="">
+                        <a>Tasks</a>
+                    </div>
+                    <div class="element2">
+                        <img src="files.svg" alt="">
+                        <a>Files</a>
+                    </div>
+                </div>
+                <div class="container2s2-row">
+                    <div class="element1">
+                        <img src="email.svg" alt="">
+                        <a>Emails</a>
+                    </div>
+                    <div class="element2">
+                        <img src="clients.svg" alt="">
+                        <a>Clients</a>
+                    </div>
+                </div>
+                <div class="container2s2-row">
+                    <div class="element1 e7">
+                        <img src="calender.svg" alt="">
+                        <a>Calendars</a>
+                    </div>
+                    <div class="element2 e8">
+                        <img src="settiings.svg" alt="">
+                        <a>Settings</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container3-s2">
+                <div class="social-icons">
+                    <img class="social-img1" src="call-icon.svg" alt="">
+                    <img class="social-img2" src="msg-icon.svg" alt="">
+                    <img class="social-img3" src="read-icon.svg" alt="">
+                    <img class="social-img4" src="share-icon.svg" alt="">
+                    <img class="social-img5" src="whatsapp-icon.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="container1-s3">
+                <div class="part1">
+                    <img src="sec3-icon1.svg" alt="">
+                    <a>New Note</a></div>
+                        <div class="part2">
+                            <input type="radio" id="sec3-icon2" name="navigation" value="sec3-icon2" style="display: none;">
+                            <label for="sec3-icon2" class="part2-1">
+                            <img src="sec3-icon2.svg" alt="">
+                            <a>All Notes</a>
+                            <a class="typo">43</a>
+                            </label>
+                            <input type="radio" id="sec3-icon2-2" name="navigation" value="sec3-icon2-2" style="display: none;">
+                            <label for="sec3-icon2-2" class="part2-2">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Design</a>
+                                <a class="typo">23</a>
+                            </label>
+                            <input type="radio" id="sec3-icon2-3" name="navigation" value="sec3-icon2-2" style="display: none;">
+                            <label for="sec3-icon2-3" class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Code Blocks</a>
+                                <a class="typo">15</a>
+                            </label>
+                            <input type="radio" id="sec3-icon2-4" name="navigation" value="sec3-icon2-2" style="display: none;">
+                            <label for="sec3-icon2-4" class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Drafts</a>
+                                <a class="typo">18</a>
+                            </label>
+                            <input type="radio" id="sec3-icon2-5" name="navigation" value="sec3-icon2-2" style="display: none;">
+                            <label for="sec3-icon2-5" class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Peoples Review</a>
+                                <a class="typo">21</a>
+                            </label>
+                            <input type="radio" id="sec3-icon2-6" name="navigation" value="sec3-icon2-2" style="display: none;">
+                            <label for="sec3-icon2-6" class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Social</a>
+                                <a class="typo">43</a>
+                            </label>
+                            <input type="radio" id="sec3-icon2-7" name="navigation" value="sec3-icon2-2" style="display: none;">
+                            <label for="sec3-icon2-7" class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Labels</a>
+                                <a class="typo">36</a>
+                            </label>
+                            <input type="radio" id="sec3-icon2-8" name="navigation" value="sec3-icon2-2" style="display: none;">
+                            <label for="sec3-icon2-8" class="part2-3 part2-3i">
+                                <img src="sec3-icon3.svg" alt="">
+                                <a class="word">Add Folder</a>
+                            </label>
+                                </div>
+                                <div class="line">
+                                    <span></span>
+                                </div>
+                                <div>
+                                    <div class="part3">
+                                    <span>Labels</span>
+                                        <div class="part3-1">
+                                        <img src="icon-blue.svg" alt="">
+                                        <a>Notes</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="icon-orange.svg" alt="">
+                                        <a> Change Notes</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="Icon-green.svg" alt="">
+                                        <a>From Family</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="Icon-purple.svg" alt="">
+                                        <a>Imagium</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="icon-blue.svg" alt="">
+                                        <a>Work</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="sec3-icon3.svg" alt="">
+                                        <a>New Label</a>
+                                    </div>
+                                </div>
+            </div>
+        </section>
+        <section class="hidden-section3" id="you">
+            <div class="container1-s3">
+                <div class="part1">
+                    <img src="sec3-icon1.svg" alt="">
+                    <a>New Note</a></div>
+                        <div class="part2">
+                            <div class="part2-1">
+                            <img src="sec3-icon2.svg" alt="">
+                            <a>All Notes</a>
+                            <a class="typo">43</a>
+                            </div>
+                            <div class="part2-2 ">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Design</a>
+                                <a class="typo">23</a>
+                            </div>
+                            <div class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Code Blocks</a>
+                                <a class="typo">15</a>
+                            </div>
+                            <div class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Drafts</a>
+                                <a class="typo">18</a>
+                            </div>
+                            <div class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Peoples Review</a>
+                                <a class="typo">21</a>
+                            </div>
+                            <div class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Social</a>
+                                <a class="typo">43</a>
+                            </div>
+                            <div class="part2-3">
+                                <img src="sec3-icon2.svg" alt="">
+                                <a class="word">Labels</a>
+                                <a class="typo">36</a>
+                            </div>
+                            <div class="part2-3 part2-3i">
+                                <img src="sec3-icon3.svg" alt="">
+                                <a class="word">Add Folder</a>
+                            </div>
+                                </div>
+                                <div class="line">
+                                    <span></span>
+                                </div>
+                                <div>
+                                    <div class="part3">
+                                    <span>Labels</span>
+                                        <div class="part3-1">
+                                        <img src="icon-blue.svg" alt="">
+                                        <a>Notes</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="icon-orange.svg" alt="">
+                                        <a> Change Notes</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="Icon-green.svg" alt="">
+                                        <a>From Family</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="Icon-purple.svg" alt="">
+                                        <a>Imagium</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="icon-blue.svg" alt="">
+                                        <a>Work</a>
+                                    </div>
+                                    <div class="part3-1">
+                                        <img src="sec3-icon3.svg" alt="">
+                                        <a>New Label</a>
+                                    </div>
+                                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="container-sec4">
+            <div class="container1-sec4">
+                <div class="sec4-part1">
+                <div class="sec4-part1-icons2">
+                    <img class="img1" src="sec4-icon1.svg" alt="">
+                    <img class="img2" src="sec4-icon2.svg" alt="">
+                </div>
+                <div class="img3">
+                    <img src="sec4-icon3.svg" alt="">
+                </div>
+                </div>
+                </div>
+                <input type="radio" id="sec4-img1" name="navigation" value="sec4-img1-1" style="display: none;">
+                <label for="sec4-img1" class="sec4-part2">
+                    <div class="sec4-part2-1"> 
+                        <a class="sec4-part-a">The Amazing Hubble</a><br>  
+                        <a>28.11.2045</a>
+                        <a class="sec4-a3">4 Photos</a></div>
+                    <div class="sec4-part2-2">
+                        <img src="sec4-img1.svg" alt="">
+                    </div>
+                </label>
+                <input type="radio" id="sec4-img2" name="navigation" value="sec4-img1-1" style="display: none;">
+                <label for="sec4-img2" class="sec4-part3">
+                    <div class="sec4-part3-1"> 
+                      <a class="sec4-part-a">Maui By Air The Best  ...</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part2-2">
+                      <img src="sec4-img2.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img3" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img3" class="sec4-part4">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">A Brief History Of Creation</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img3.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img4" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img4" class="sec4-part4 sec4-part4-a">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">What Curling Irons Are ...</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img4.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img5" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img5" class="sec4-part4 sec4-part4-b">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">Learn How To Motivate Your...</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img5.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img6" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img6" class="sec4-part4 sec4-part4-c">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">Free Advertising For ..</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img6.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img7" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img7" class="sec4-part4 sec4-part4-d">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">Why Do You Need To ...</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img7.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img8" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img8" class="sec4-part4 sec4-part4-e">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">Advertising Internet Online ...</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img8.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img9" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img9" class="sec4-part4 sec4-part4-f">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">Advertise No Matter ...</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img9.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img10" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img10" class="sec4-part4 sec4-part4-g">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">Writing A Good Headline ...</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img10.svg" alt="">
+                  </div>
+                  </label>
+                  <input type="radio" id="sec4-img11" name="navigation" value="sec4-img1-1" style="display: none;">
+                  <label for="sec4-img11" class="sec4-part4 sec4-part4-h">
+                    <div class="sec4-part4-1"> 
+                      <a class="sec4-part-a">Finally A Top Secret Way ...</a><br>  
+                      <a>28.11.2045</a>
+                      <a class="sec4-a3">4 Photos</a></div>
+                  <div class="sec4-part4-2">
+                      <img src="sec4-img10.svg" alt="">
+                  </div>
+                  </label>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="container-s5">
+                <div class="sec5-row1">
+                    <div class="sec5-row1-cont1">
+                    <div class="sec5-row1-1">
+                    <img src="sec5-icon1.svg" alt="">
+                    </div>
+                    <div class="sec5-row1-1">
+                        <img src="sec5-icon2.svg" alt="">
+                        </div>
+                        <div class="sec5-row1-1">
+                            <img src="sec5-icon3.svg" alt="">
+                            </div>
+                            <div class="sec5-row1-1">
+                                <img src="sec5-icon4.svg" alt="">
+                                </div>
+                                <div class="sec5-row1-1">
+                                    <img src="sec5-icon5.svg" alt="">
+                                    </div>
+                                    </div>
+                                    <div class="sec5-row1-cont2">
+                                    <div class="sec5-row1-2">
+                                        <img src="sec5-search.svg" alt="">
+                                        <a>Search</a>
+                                    </div>
+                </div>
+            </div>
+            <div class="sec5-row1-line1">
+                <span></span>
+            </div>
+            <p class="sec5-row2">What Makes Flayers Unrivaled</p>
+            <p class="sec5-row3">
+                Watching the news the other day, it occurred to me that people who have
+                 “words to live by” often begin to attack and even kill others. I thought back to 
+                 my own angry youth, when I could easily use words to justify violent thoughts
+                 which might have become violent actions. 
+            </p>
+            <img class="sec5-row4" src="sec5-bigimg.svg" alt="">
+            <div class="sec5-row5">
+            <table>
+                <tr>
+                    <td>Change Table</td>
+                    <td>A column</td>
+                    <td>B column</td>
+                </tr>
+                <tr>
+                    <td>Cell 1 Change</td>
+                    <td>Cell 3 Change</td>
+                    <td>Cell 5 Change</td>
+                </tr>
+                <tr>
+                    <td>Cell 2 Change</td>
+                    <td>Cell 4 Change</td>
+                    <td>Cell 6 Change</td>
+                </tr>
+            </table>
+            <div class="sec5-row5-a">
+                <img src="sec5-row5-icon.svg" alt="">
+            </div>
+            <div class="sec5-row5-b">
+                <img src="sec5-row5-icon.svg" alt="">
+            </div>
+            </div>
+            <div class="sec5-row6">
+                <div class="sec5-row6-a">
+                    <span class="circle-emty"></span>
+                    <a>Differentiate Yourself And Attract</a>
+                </div>
+                <div class="sec5-row6-a">
+                    <span class="circle-emty"></span>
+                    <a>A Guide To Rocky Mountain Vacations </a>
+                </div>
+                <div class="sec5-row6-a">
+                    <span class="circle-emty"></span>
+                    <a>Advertisers Embrace Rich Media Format </a>
+                </div>
+                <div class="sec5-row6-a">
+                    <span class="circle-emty"></span>
+                    <a>WordPress Version 2 0 3 Review</a>
+                </div>
+            </div>
+            <div class="sec5-row7">
+                <a> Another title for this article can be “How to write an ad that will be
+                    immediately thrown into a waste paper basket?”</a>
+            </div>
+            </div>            
+        </section>
+        </div> 
+        </div>
+</body>
+</html>

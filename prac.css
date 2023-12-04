@@ -1,0 +1,72 @@
+/* label{
+    display:block;
+    border:solid 2px green;
+    width: 200px;
+    height:40px;
+    margin-top:10px;
+    color:green;
+    text-align:center;
+    line-height: 40px;
+}
+ 
+input[type="radio"]:checked+label 
+{
+    background-color:white;
+    transform: scale(1.2); 
+    border-radius: 15px;
+    border: 2px solid #EDEFF2;
+} */
+/* Style for the labels (container) */
+.container2s2-row label {
+    cursor: pointer;
+  }
+  .element1, .element2{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+    transition: transform .2s;
+}
+.element1{
+    border-top:2px solid #EDEFF2;
+    border-left:2px solid #EDEFF2;
+    border-right:2px solid #EDEFF2;
+}
+.element2{
+    border-top:2px solid #EDEFF2; 
+    border-right:2px solid #EDEFF2;
+}
+.element1 a, .element2 a{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ADB8CC;
+    }
+  
+  /* Style for the images within the labels */
+  .container2s2-row label img {
+    /* Style the image as needed */
+  }
+  
+  /* Style for the labels when radio buttons are checked */
+  .container2s2-row input:checked + label {
+    background-color:white;
+    transform: scale(1.2); 
+    border-radius: 15px;
+    border: 2px solid #EDEFF2;
+  }
+  
+  /* Unchecked state styles (optional) */
+  .container2s2-row label {
+    background-color: #fff;
+    color: #000;
+    /* Add other default styles here */
+  }
+  
